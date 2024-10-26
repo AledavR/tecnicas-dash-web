@@ -73,13 +73,13 @@ layout = html.Div(className='envoltura-derecha', children=[
                 dmc.NumberInput(label="Recuperados Iniciales", value=0, id='recuperados_init_sis'),
             ]),
             html.Div(className="w-input", children=[
-                dmc.NumberInput(label="Tasa de Transmisión (beta)", value=0.3, id='beta_sis'),
+                dmc.NumberInput(label="Tasa de Transmisión (beta)", value=0.3, id='beta_sis',step = 0.1),
             ]),
             html.Div(className="w-input", children=[
-                dmc.NumberInput(label="Tasa de Recuperación (gamma)", value=0.1, id='gamma_sis'),
+                dmc.NumberInput(label="Tasa de Recuperación (gamma)", value=0.1, id='gamma_sis', step = 0.1),
             ]),
             html.Div(className="w-input", children=[
-                dmc.NumberInput(label="Tiempo Total", value=160, id='tiempo_sis'),
+                dmc.NumberInput(label="Tiempo Total", value=160, id='tiempo_sis', step = 5),
             ]),
             html.Div(className="w-input ocultar-slider", children=[
                 dmc.Slider(min=10, max=1000, step=1, value=160, id='cant_sis', label="Particiones del Tiempo")

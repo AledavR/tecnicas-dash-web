@@ -80,23 +80,23 @@ layout = html.Div(className='envoltura-derecha', children=[
                     ]),
 
                     html.Div(className="w-input", children=[
-                        dmc.NumberInput(label="Tasa de Crecimiento de Presas (alpha)", value=0.1, id='alpha' ),
+                        dmc.NumberInput(label="Tasa de Crecimiento de Presas (alpha)", value=0.1, id='alpha', step = 0.1),
                     ]),
 
                     html.Div(className="w-input", children=[
-                        dmc.NumberInput(label="Tasa de Depredación (beta)", value=0.02, id='beta'),
+                        dmc.NumberInput(label="Tasa de Depredación (beta)", value=0.02, id='beta', step = 0.02),
                     ]),
 
                     html.Div(className="w-input", children=[
-                        dmc.NumberInput(label="Tasa de Crecimiento de Depredadores (delta)", value=0.01, id='delta'),
+                        dmc.NumberInput(label="Tasa de Crecimiento de Depredadores (delta)", value=0.01, id='delta',step=0.01),
                     ]),
 
                     html.Div(className="w-input", children=[
-                        dmc.NumberInput(label="Tasa de Mortalidad de Depredadores (gamma)", value=0.1, id='gamma'),  
+                        dmc.NumberInput(label="Tasa de Mortalidad de Depredadores (gamma)", value=0.1, id='gamma',step=0.1),  
                     ]),
 
                     html.Div(className="w-input", children=[
-                    dmc.NumberInput(label="Tiempo Total", value=100, id='tiempo'), 
+                    dmc.NumberInput(label="Tiempo Total", value=100, id='tiempo',step = 5), 
                     ]),
                     
                     html.Div(className="w-input", children=[

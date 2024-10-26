@@ -70,7 +70,7 @@ layout = html.Div(className='envoltura-derecha', children=[
             html.H2('PARÁMETROS'),
             html.Div(className='div_flex', children=[
                 html.Div([
-                    dmc.NumberInput(label="Población Inicial", value=10, id='pob_ini'),
+                    dmc.NumberInput(label="Población Inicial", value=10, id='pob_ini',step=5),
                 ]),
                 html.Div([
                     dmc.NumberInput(label="Tiempo Inicial", value=0, id='time_ini'),
@@ -79,10 +79,10 @@ layout = html.Div(className='envoltura-derecha', children=[
                     dmc.NumberInput(label="Tiempo Final", value=60, id='time_fin'),
                 ]),
                 html.Div([
-                    dmc.NumberInput(label="Tasa de Crecimiento", value=0.15, id='r'),
+                    dmc.NumberInput(label="Tasa de Crecimiento", value=0.15, id='r',step = 0.1),
                 ]),
                 html.Div([
-                    dmc.NumberInput(label="Capacidad de Carga", value=150, id='K'),
+                    dmc.NumberInput(label="Capacidad de Carga", value=150, id='K',step = 5),
                 ]),
             ]),
         ]),

@@ -2,12 +2,6 @@
 
 This repository contains a dash web page implementation of different mathematical models.
 
-## Current models
-
-+ Logarithmic growth function
-+ Exponential growth with threshold
-+ Lotka-Volterra
-
 ## Setup
 
 To run the dash web page follow these steps:
@@ -35,7 +29,7 @@ source dash-web-venv/bin/activate
 4. Install python dependencies:
 
 ```
-pip install numpy scipy dash sympy
+pip install numpy scipy dash sympy dash-daq dash-mantine-components
 ```
 
 5. Run the server:
